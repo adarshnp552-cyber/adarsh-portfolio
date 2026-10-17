@@ -80,14 +80,11 @@ export default function Home() {
     <main className="portfolio">
       {/* Background music: file must be inside the public folder */}
       <audio
-        ref={audioRef}
-        src="/kulakovka-cinematic-ambient-274889.mp3"
-        loop
-        preload="none"
-        onError={() => setAudioError(true)}
-        onEnded={() => setSoundOn(false)}
-      />
-
+  ref={audioRef}
+  src="/kulakovka-cinematic-ambient-274889.mp3"
+  loop
+  preload="none"
+/>
       <div className="ambient-background" aria-hidden="true">
         <div className="ambient-glow ambient-glow-one" />
         <div className="ambient-glow ambient-glow-two" />
